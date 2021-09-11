@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HomePage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body 
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 20;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 16px;
+  }
+
+.sidebar a {
+  padding: 6px px 6px 16px;
+  font-size: 20px;
+  color:LightGray;
+  display: block;
+  }
+
+.sidebar a:hover {
+  color:Gray;
+  }
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 50px;
+  }
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  }
+
+</body>
+
+* {box-sizing: double;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+.header {
+  overflow: hidden;
+  background-color:lightgray;
+  padding: 20px 10px;
+  }
+
+.header a {
+  float: left;
+  hight:100%
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px; 
+  line-height: 25px;
+  border-radius: 4px;
+  }
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  }
+
+.header a:hover {
+  background-color:Gray;
+  color: black;
+  }
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+  }
+
+.header-right {
+  float: right;
+  }
+.footer {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: DarkSalmon;
+  color:Black;
+  }
+
+@media screen and (max-width: 500px) {
+.header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+.header-right {
+    float: none;
+    
+  }
+}
+</style>
+<body>
+
+<div class="header">
+
+
+  <a href="#default" class="logo">cognitiveclouds</a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact" style="color:blue;">Contact</a>
+    <a href="#About" style="color:blue;">About</a>
+</div>
+</div>
+<div class="sidebar">
+  <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#login"><i class="fa fa-fw fa-user"></i> Login</a>
+  <a href="#search"><i class="fa fa-fw fa-search"></i> Search</a>
+  <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+  <a href="#clients"><i class="fa fa-fw fa-users"></i> Clients</a>
+  <a href="#contact"><i class="fa fa-fw fa-phone"></i> Contact</a>
+  <a href="#settings"><i class="fa fa-fw fa-gear"></i>settings</a> 
+  <a href="#location"><i class="fa fa-fw fa-map"></i> location</a>
+</div>
+
+<div class="main">
+<img src="https://skilled.co/wp-content/uploads/2017/03/cognitive-clouds-logo.png" width="100%" hight="5px">
+  <h2 style="color:red;">Basic home page:</h2>
+  <p>Hi, My name is Shivananda S Teradal I have done a Basic HomePage which contains  HEADER,NAV BAR,SIDE BAR,MAIN and FOOTER</p>
+  <p>In this Homepage we can also add:</p>
+   <ol type="i">
+      <li>Links or url's</li>
+      <li>Images</li>
+      <li>audios</li>
+      <li>Videos</li>
+      <li>Social media links</li>
+   </ol>
+   <p>And many more can be added, And also the styles can be changed as per the needs by help of CSS and HTML. This was my Basic homepage.</p>
+   
+</div>
+<footer>
+<div class="footer">
+  <h4>Trainee: Shivananda S Teradal</h4>
+  <p><a href="#gmail"><i class="fa fa-fw fa-envelope"></i>shivanandateradal@gmail.com</a>
+  <a href="#contact"><i class="fa fa-fw fa-phone"></i> 9663168699</a></p>
+  <p><a href="#location"><i class="fa fa-fw fa-building"></i> #4 1st cross 1st main Banglore-560000</a> 
+</div>
+</footer>
+</body>
+</html>
