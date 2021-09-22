@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>session 4(Qn-02)</title>
+</head>
+<body>
+	<h2>
+		2: Write a function which camelizes input word for given example:
+	</h2>
+    <p id="ans0"></p>
+    <p id="ans1"></p>
+    <p id="ans2"></p>
+    <p style="color:blue;">Hint*: answer is also present in Debug Console</p>
+</body>
+
+<script>
+	function camelize(str)
+{
+    let newstr="";
+    let arr= str.split('-');
+    for(let i in arr)
+    {
+        if(i==0)
+        {
+            
+            newstr=newstr+arr[i].charAt(0).toLowerCase()+arr[i].slice(1);
+            
+            
+        }
+        else{
+            newstr=newstr+arr[i].charAt(0).toUpperCase()+arr[i].slice(1);
+            
+        }
+    }
+    return newstr;
+}
+let ans0=camelize('background-color')
+console.log(ans0);
+document.getElementById('ans0').innerHTML=ans0;
+ans1=camelize('list-style-image')
+console.log(ans1);
+document.getElementById('ans1').innerHTML=ans1;
+ans2=camelize('-webkit-transition')
+console.log(ans2);
+document.getElementById('ans2').innerHTML=ans2;
+</script>
+</html>
