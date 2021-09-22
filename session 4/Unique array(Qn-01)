@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>session 4(Qn-01)</title>
+</head>
+<body>
+    <h2>
+        Qn 1: Find unique items in the array
+    </h2>
+        <p id="unique(arr)"></p>
+	<p style="color:blue;" >Hint* : answer is displayed in the Debug Console</p>
+</body>
+<script>
+   
+   function unique(arr) {
+    var set= new Set(arr);
+    return (Array.from(set.values()))
+
+   }
+   
+   let arr = ["green", "green", "red", "red","yellow", "pink", "pink", "yellow"];
+   
+var values=unique(arr);
+console.log("Unique values are:",unique(arr));
+document.getElementById('unique(arr)').innerHTML=unique(arr);
+</script>
+</html>
