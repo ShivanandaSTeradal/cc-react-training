@@ -1,0 +1,33 @@
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session 4(Qn-04)</title>
+</head>
+<body>
+    <h3>
+        4: Given the following array of objects called 'users', write a function which creates a new
+         array that contains objects in the following structure:
+    </h3>
+    <p>usersMapped =</p>
+    <p id="newusers"></p>
+</body>
+<script>
+let users = [
+    {id: 1, name:"Raksha", surname:"Sharma", age:28},
+    {id: 2, name:"Srinivas", surname:"lyengar", age:30},
+    {id: 3, name:"Usha", surname:"Janardhana", age:54},
+];
+
+let newusers = users.map( (cvalue) => {
+    return `{fullName: "${cvalue.name} ${cvalue.surname}" ,id: ${cvalue.id}}`;
+} );
+console.log(newusers);
+document.getElementById('newusers').innerHTML=newusers;
+</script>
+<p style="color:blue;">*The output is also visible on Debug Console</p>
+</html>
+
